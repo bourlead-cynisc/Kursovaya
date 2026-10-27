@@ -7,8 +7,7 @@ Python-версия крипто-утилиты: **AES, RSA, SHA-256, ECDSA** (�
 ## О библиотеке: pycrypto → pycryptodome
 
 Оригинальный `pycrypto` заброшен с 2013 года, не устанавливается на современный Python (3.12+) и не содержит
-ECDSA. Его живая замена — **pycryptodome**: то же пространство имён (`from Crypto.Cipher import AES`), тот же
-стиль кода, плюс ECC/DSS. Именно она используется в проекте. Ставить её нужно вместо pycrypto.
+ECDSA. Именно она используется в проекте.
 
 ## Установка
 
@@ -23,9 +22,6 @@ python main.py
 Либо системными пакетами: `sudo pacman -S python-pyside6 python-pycryptodome`, затем `python main.py`.
 
 **Windows / macOS:** `pip install -r requirements.txt`, затем `python main.py`.
-
-Если в Wayland окно не открывается: `QT_QPA_PLATFORM=xcb python main.py`.
-
 ## Структура
 
 ```
